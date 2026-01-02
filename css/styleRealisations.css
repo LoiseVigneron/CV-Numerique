@@ -89,10 +89,11 @@
 
 .alt-bg {
     background: rgba(255, 255, 255, 0.02);
-    margin-left: -100vw;
-    margin-right: -100vw;
-    padding-left: 100vw;
-    padding-right: 100vw;
+    margin-left: -5%; 
+    margin-right: -5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: auto;
 }
 
 /* --- TITRES DES SECTIONS --- */
@@ -258,6 +259,13 @@ h2 {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     .gallery-simple, .skills-summary {
         grid-template-columns: 1fr;
     }
